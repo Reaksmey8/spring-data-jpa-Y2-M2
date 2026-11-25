@@ -5,7 +5,6 @@ import co.istad.springmvcy2.model.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.server.ResponseStatusException;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -18,13 +17,13 @@ public class UserRepository {
 
     public UserRepository(){
         users = new ArrayList<>();
-        User userAdmin = new User(UUID.randomUUID(), "ADMIN", "dara", "12134", true);
-        User userBusiness = new User(UUID.randomUUID(), "BUSINESS", "koma", "22134", true);
-        User userCustomer = new User(UUID.randomUUID(), "CUSTOMER", "Sitheang", "4321", true);
+//        User userAdmin = new User(UUID.randomUUID(), "ADMIN", "dara", "12134", true);
+//        User userBusiness = new User(UUID.randomUUID(), "BUSINESS", "koma", "22134", true);
+//        User userCustomer = new User(UUID.randomUUID(), "CUSTOMER", "Sitheang", "4321", true);
 
-        users.add(userAdmin);
-        users.add(userBusiness);
-        users.add(userCustomer);
+//        users.add(userAdmin);
+//        users.add(userBusiness);
+//        users.add(userCustomer);
     }
 
     public List<User> selectAll(){

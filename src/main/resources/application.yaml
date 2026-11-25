@@ -1,0 +1,17 @@
+server:
+  port: 7890
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/m2-db-y2
+    username: postgres
+    password: YourNewPassword123
+  application:
+    name: api_mvc
