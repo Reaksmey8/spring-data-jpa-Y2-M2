@@ -1,7 +1,10 @@
 package co.istad.springmvcy2.dto;
 
+import java.util.UUID;
+
 public record UserResponse(
-        Integer id,
-        String name
+        UUID id,
+        String name,
+        Boolean isActive
 ) {
 }

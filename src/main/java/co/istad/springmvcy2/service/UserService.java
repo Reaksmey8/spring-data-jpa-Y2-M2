@@ -2,20 +2,26 @@ package co.istad.springmvcy2.service;
 
 
 import co.istad.springmvcy2.dto.CreateUserRequest;
+import co.istad.springmvcy2.dto.UserResponse;
 import co.istad.springmvcy2.model.User;
+import org.springframework.data.domain.Page;
 
 import java.util.List;
 import java.util.UUID;
 
 public interface UserService {
 
-    List<User> selectAll();
+    List<UserResponse> selectAll();
 
-    User getById(UUID id);
+    UserResponse getById(UUID id);
 
-    void deleteById(UUID id);
+    Page<UserResponse> getAllWithPaging(int pageNumber, int pageSize);
 
-    User createNewUser(CreateUserRequest createUserRequest);
+
+//
+//    void deleteById(UUID id);
+//
+//    User createNewUser(CreateUserRequest createUserRequest);
 
 }
 
